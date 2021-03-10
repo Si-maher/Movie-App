@@ -25,3 +25,25 @@
      color: #fff;
 
  }
+ .search::placeholder {
+     color: #7378c5;
+ }
+ .search:focus {
+     background-color: var(--primary-color);
+     outline: none;
+ }
+
+ main {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .movie {
+     width: 300px;
+     background-color: var(--secondary-color);
+     margin: 1rem;
+     border-radius: 5px;
+     box-shadow: 0 4px 5px rgba(0,0,0, 0.4);
+ }
+ .movie img {
+     width: 100%;
+ }
