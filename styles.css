@@ -45,6 +45,8 @@
      margin: 1rem;
      border-radius: 5px;
      box-shadow: 0 4px 5px rgba(0,0,0, 0.4);
+     position: relative;
+     overflow: hidden;
  }
  .movie img {
      width: 100%;
@@ -75,6 +77,24 @@
 
  .movie-info span.orange
   {color: orange;}
-  
+
  .movie-info span.red
-  {color: red;}
+  {color: red;
+}
+
+  .overview {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #fff;
+      padding: 2rem;
+      max-height: 100%;
+      transform: translateY(101%);
+      transition: transform 0.3s ease;
+
+  }
+
+  .movie:hover .overview {
+      transform: translateY(0);
+  }
